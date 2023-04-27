@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  client:
+    build:
+      context: ./client
+    networks:
+      - crypto-stats
+  proxy-server:
+    image: proxy-server-i
+    build:
+      context: ./proxy-server
+      dockerfile: Dockerfile
+    container_name: proxy-server-c
+    ports:
+      - "4000:4000"
+    networks:
+      - crypto-stats
+
+networks:
+  crypto-stats:
+    driver: bridge

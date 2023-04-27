@@ -1,0 +1,13 @@
+./client/node_modules
+./proxy-server/node_modules
+dist
+.idea
+.git
+./client/.gitignore
+.dockerignore
+docker-compose.dev.yaml
+docker-compose.prod.yaml
+Dockerfile
+./client/Dockerfile-dev
+./client/Dockerfile-prod
+README.md
