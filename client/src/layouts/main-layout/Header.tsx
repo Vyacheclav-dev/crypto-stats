@@ -3,6 +3,7 @@ import { AppBar, Box, Container, IconButton, Menu, MenuItem, Toolbar, Typography
 import MenuIcon from '@mui/icons-material/Menu'
 import CurrencyExchange from '@mui/icons-material/CurrencyExchange'
 import Home from '@mui/icons-material/Home'
+import Timeline from '@mui/icons-material/Timeline'
 import { NavLink } from 'react-router-dom'
 import { Routes } from '../../router/routes'
 import useMediaQuery from '@mui/material/useMediaQuery'
@@ -17,7 +18,7 @@ type Link = {
 
 const links: Link[] = [
   { title: 'Home', icon: <Home sx={{ mr: 1 }} />, to: Routes.HOME },
-  { title: 'Dashboard', icon: <Home sx={{ mr: 1 }} />, to: Routes.DASHBOARD }
+  { title: 'OHLC Candlesticks', icon: <Timeline sx={{ mr: 1 }} />, to: Routes.OHLC_Candlesticks }
 ]
 
 const Header: FC = () => {

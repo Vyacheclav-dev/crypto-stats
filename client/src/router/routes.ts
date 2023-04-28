@@ -1,6 +1,6 @@
 export enum Routes {
   ROOT = '/',
   HOME = 'home',
-  DASHBOARD = 'dashboard',
+  OHLC_Candlesticks = 'ohlc-candlesticks',
   ERROR = 'error'
 }

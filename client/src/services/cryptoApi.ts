@@ -14,10 +14,34 @@ export const cryptoApi = createApi({
   endpoints: (builder) => ({
     getAssets: builder.query({
       query: () => createRequest(apiUrls.GET_ASSETS)
+    }),
+    getPairs: builder.query({
+      query: ({limit}: {limit: string}) => {
+        return createRequest(`${apiUrls.GET_PAIRS}/${limit}`)
+      }
+    }),
+    getPairsCount: builder.query({
+      query: () => createRequest(apiUrls.GET_PAIRS_COUNT)
+    }),
+    getMarketsCount: builder.query({
+      query: () => createRequest(apiUrls.GET_MARKETS_COUNT)
+    }),
+    getExchanges: builder.query({
+      query: () => createRequest(apiUrls.GET_EXCHANGES)
+    }),
+    getCandlesticks: builder.query({
+      query: ({ exchange, pair }: { exchange: string, pair: string }) => {
+        return createRequest(`${apiUrls.GET_CANDLESTICKS}/${exchange}/${pair}`)
+      }
     })
   })
 })
 
 export const {
-  useGetAssetsQuery
+  useGetAssetsQuery,
+  useGetPairsQuery,
+  useGetPairsCountQuery,
+  useGetMarketsCountQuery,
+  useGetExchangesQuery,
+  useGetCandlesticksQuery
 } = cryptoApi
