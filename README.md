@@ -4,19 +4,19 @@
 
 
 ### Development, watch mode
- $ cd ./client <br/>
- $ npm install <br/>
- $ cd ../ <br/>
- $ cd ./proxy-server <br/>
- $ npm install <br/>
- $ cd ../ <br/>
- $ cd ./bin <br/>
- $ ./deploy.sh dev up (to start app) <br/>
- $ ./deploy.sh dev down (to shut down app) <br/>
- $ URL http://localhost:5173 <br/>
+$ cd ./client <br/>
+$ npm install <br/>
+$ cd ../ <br/>
+$ cd ./proxy-server <br/>
+$ npm install <br/>
+$ cd ../ <br/>
+$ cd ./bin <br/>
+$ ./deploy.sh dev up (to start app) <br/>
+$ ./deploy.sh dev down (to shut down app) <br/>
+$ URL http://localhost:5173 <br/>
 
 ### Production mode
- $ cd ./bin <br/>
- $ ./deploy.sh prod up (to start app) <br/>
- $ ./deploy.sh prod down (to shut down app) <br/>
- $ URL http://localhost:80 <br/>
+$ cd ./bin <br/>
+$ ./deploy.sh prod up (to start app) <br/>
+$ ./deploy.sh prod down (to shut down app) <br/>
+$ URL http://localhost:80 <br/>
